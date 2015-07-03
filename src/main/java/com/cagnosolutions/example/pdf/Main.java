@@ -29,6 +29,7 @@ public class Main {
 		PDFToolKit toolkit = new PDFToolKit();
 
 		try {
+			// fill out some of the pdf data from the passed in map
 			PDFToolKit.populateAndCopy(pdfForm, pdfFill, data);
 		} catch (IOException | COSVisitorException e) {
 			e.printStackTrace();
